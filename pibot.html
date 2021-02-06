@@ -119,6 +119,10 @@ var udemy = lastUserMessage.includes("udemy");
 var eğitim = lastUserMessage.includes("eğitim");
 
 botMessage = "Sorunu anlayamadım. hisarcs@hisarschool.k12.tr'ye sorunu iletebilirsin."; //the default message
+function forceLower(lastUserMessage) 
+{
+lastUserMessage.value=lastUserMessage.value.toLowerCase();
+}
 
   if (lastUserMessage === 'merhaba' || lastUserMessage =='selam' || lastUserMessage =='hey') {
     const selam = ['merhaba! ben PiBot. sana yardım etmek için buradayım.','selam! ben PiBot. sana yardım etmek için buradayım.']
